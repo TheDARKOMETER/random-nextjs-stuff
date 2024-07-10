@@ -1,0 +1,10 @@
+.content {
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    background-color: rgb(254, 243, 199);
+    overflow: hidden;
+}
+
+#collapsible:hover, #collapsible.active {
+    background-color: rgb(224, 213, 169);
+}
