@@ -21,11 +21,10 @@ export default async function ProductsPage() {
                     {products.map(product => {
                         return <Product product={product} key={product.id} />
                     })}
+                    <CreateProduct />
                 </div>
-                <CreateProduct />
+
             </div>
-
-
         </>
     )
 }

@@ -70,8 +70,6 @@ export default function CreateProduct() {
    )
 
 
-
-
    const toggleCreateMenu = () => {
       setIsCreating(!isCreating)
    }
@@ -98,14 +96,15 @@ export default function CreateProduct() {
    }, [image])
 
    return (
-      <>
+      <div className="items-center flex flex-col justify-center w-48 border border-gray-500 rounded-md">
          <button onClick={toggleCreateMenu}>
-            <div className="transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 z-10 drop-shadow-2xl flex items-center justify-center w-16 h-16 bg-red-500 rounded-full absolute bottom-1 right-1 mb-3 mr-3">
+            <div className="transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 z-10 drop-shadow-2xl flex items-center justify-center w-16 h-16 bg-red-500 rounded-full mb-3 mr-3">
                <span className="text-white"><AddIcon fontSize="large" /></span>
             </div>
          </button>
+         <p className="text-sm text-gray-500">Add a Product</p>
          {isCreating && createMenu}
-      </>
+      </div>
 
    )
 }

@@ -31,7 +31,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col gap-5 items-center md:justify-center  w-screen h-svh">
+    <main className="flex flex-col gap-5 items-center md:justify-center  mt-12">
 
       <h1 className="text-4xl">Boxes</h1>
 
